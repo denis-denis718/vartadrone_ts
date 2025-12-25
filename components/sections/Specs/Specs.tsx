@@ -4,10 +4,24 @@ import { useTranslations } from 'next-intl';
 import { FadeIn } from '@/components/animations';
 import { PRODUCTS } from '@/lib/constants';
 
+interface ProductWithRange {
+  id: string;
+  image: string;
+  specs: {
+    range: number;
+    weight: number;
+    ammo: number;
+    reloadTime: number;
+  };
+  badges: readonly string[];
+}
+
 export function Specs() {
   const t = useTranslations('products');
 
-  const productsWithSpecs = PRODUCTS.filter(p => 'range' in p.specs);
+  const productsWithSpecs = PRODUCTS.filter(
+    (p) => 'range' in p.specs
+  ) as unknown as ProductWithRange[];
 
   return (
     <section className="section-padding bg-tactical-muted">
