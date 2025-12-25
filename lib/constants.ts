@@ -1,3 +1,5 @@
+export const BASE_PATH = '/vartadrone_ts';
+
 export const SITE_CONFIG = {
   name: 'VARTA DroneHunter',
   domain: 'vartadrone.com',
@@ -16,7 +18,7 @@ export const NAV_ITEMS = [
 export const PRODUCTS = [
   {
     id: 'kozak',
-    image: '/images/droneHunterVarta.svg',
+    image: `${BASE_PATH}/images/droneHunterVarta.svg`,
     specs: {
       range: 800,
       weight: 1.2,
@@ -27,7 +29,7 @@ export const PRODUCTS = [
   },
   {
     id: 'sich',
-    image: '/images/sich_complect.svg',
+    image: `${BASE_PATH}/images/sich_complect.svg`,
     specs: {
       range: 600,
       weight: 0.8,
@@ -38,7 +40,7 @@ export const PRODUCTS = [
   },
   {
     id: 'bulava',
-    image: '/images/droneSecondHunterVarta.svg',
+    image: `${BASE_PATH}/images/droneSecondHunterVarta.svg`,
     specs: {
       range: 1200,
       weight: 2.4,
@@ -49,32 +51,32 @@ export const PRODUCTS = [
   },
   {
     id: 'spys',
-    image: '/images/forComplect.webp',
+    image: `${BASE_PATH}/images/forComplect.webp`,
     specs: {
       caliber: '20mm',
       types: ['SPYS20', 'SPYS2K'],
     },
     badges: ['SPECIALIZED'],
   },
-] as const;
+];
 
 export const COMPLECTS = [
   {
     id: 'lucky-strike-basic',
-    image: '/images/sich_complect.svg',
+    image: `${BASE_PATH}/images/sich_complect.svg`,
     products: ['kozak', 'spys20'],
   },
   {
     id: 'lucky-strike-pro',
-    image: '/images/sich_complect2.svg',
+    image: `${BASE_PATH}/images/sich_complect2.svg`,
     products: ['kozak', 'sich', 'spys20', 'spys2k'],
   },
   {
     id: 'lucky-strike-tactical',
-    image: '/images/forComplect2.webp',
+    image: `${BASE_PATH}/images/forComplect2.webp`,
     products: ['bulava', 'kozak', 'sich', 'spys20', 'spys2k'],
   },
-] as const;
+];
 
 export const SOCIAL_LINKS = {
   telegram: 'https://t.me/vartadrone',

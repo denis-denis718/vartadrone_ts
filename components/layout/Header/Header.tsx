@@ -6,7 +6,7 @@ import Image from 'next/image';
 import { useTranslations } from 'next-intl';
 import { motion, AnimatePresence } from 'framer-motion';
 import { cn } from '@/lib/utils';
-import { NAV_ITEMS } from '@/lib/constants';
+import { NAV_ITEMS, BASE_PATH } from '@/lib/constants';
 import { LanguageSwitcher } from './LanguageSwitcher';
 import { MobileMenu } from './MobileMenu';
 
@@ -48,7 +48,7 @@ export function Header({ locale }: HeaderProps) {
             <Link href={`/${locale}`} className="flex items-center gap-3 group">
               <div className="relative w-12 h-12 overflow-hidden rounded">
                 <Image
-                  src="/images/varta_logo.webp"
+                  src={`${BASE_PATH}/images/varta_logo.webp`}
                   alt="VARTA DroneHunter"
                   fill
                   className="object-contain transition-transform duration-300 group-hover:scale-110"

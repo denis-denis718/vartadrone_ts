@@ -3,7 +3,7 @@
 import Link from 'next/link';
 import Image from 'next/image';
 import { useTranslations } from 'next-intl';
-import { SOCIAL_LINKS, CONTACT_INFO, NAV_ITEMS } from '@/lib/constants';
+import { SOCIAL_LINKS, CONTACT_INFO, NAV_ITEMS, BASE_PATH } from '@/lib/constants';
 
 interface FooterProps {
   locale: string;
@@ -24,7 +24,7 @@ export function Footer({ locale }: FooterProps) {
             <Link href={`/${locale}`} className="flex items-center gap-3 mb-6">
               <div className="relative w-12 h-12 overflow-hidden rounded">
                 <Image
-                  src="/images/varta_logo.webp"
+                  src={`${BASE_PATH}/images/varta_logo.webp`}
                   alt="VARTA DroneHunter"
                   fill
                   className="object-contain"

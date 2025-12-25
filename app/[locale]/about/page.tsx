@@ -3,6 +3,7 @@ import Image from 'next/image';
 import { setRequestLocale, getTranslations } from 'next-intl/server';
 import { FadeIn } from '@/components/animations';
 import { Badge } from '@/components/ui/Badge';
+import { BASE_PATH } from '@/lib/constants';
 
 interface AboutPageProps {
   params: Promise<{ locale: string }>;
@@ -71,7 +72,7 @@ export default async function AboutPage({ params }: AboutPageProps) {
             <FadeIn direction="right">
               <div className="relative aspect-square rounded-lg overflow-hidden border border-camo-olive/30">
                 <Image
-                  src="/images/varta_logo.webp"
+                  src={`${BASE_PATH}/images/varta_logo.webp`}
                   alt="VARTA DroneHunter"
                   fill
                   className="object-contain p-12 bg-gradient-to-br from-tactical-elevated to-tactical-soft"
@@ -132,7 +133,7 @@ export default async function AboutPage({ params }: AboutPageProps) {
             <FadeIn>
               <div className="relative aspect-[4/3] rounded-lg overflow-hidden border border-camo-olive/30">
                 <Image
-                  src="/images/droneHunterVarta.svg"
+                  src={`${BASE_PATH}/images/droneHunterVarta.svg`}
                   alt="VARTA Products"
                   fill
                   className="object-contain p-8 bg-gradient-to-br from-tactical-elevated to-tactical-soft"
@@ -142,7 +143,7 @@ export default async function AboutPage({ params }: AboutPageProps) {
             <FadeIn delay={0.1}>
               <div className="relative aspect-[4/3] rounded-lg overflow-hidden border border-camo-olive/30">
                 <Image
-                  src="/images/sich_complect.svg"
+                  src={`${BASE_PATH}/images/sich_complect.svg`}
                   alt="VARTA Complects"
                   fill
                   className="object-contain p-8 bg-gradient-to-br from-tactical-elevated to-tactical-soft"

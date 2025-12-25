@@ -3,6 +3,7 @@ import Image from 'next/image';
 import { setRequestLocale, getTranslations } from 'next-intl/server';
 import { FadeIn } from '@/components/animations';
 import { Badge } from '@/components/ui/Badge';
+import { BASE_PATH } from '@/lib/constants';
 
 interface TechnologyPageProps {
   params: Promise<{ locale: string }>;
@@ -105,7 +106,7 @@ export default async function TechnologyPage({ params }: TechnologyPageProps) {
           <FadeIn>
             <div className="relative aspect-[21/9] rounded-lg overflow-hidden border border-camo-olive/30">
               <Image
-                src="/images/shevrones_carousel.svg"
+                src={`${BASE_PATH}/images/shevrones_carousel.svg`}
                 alt="VARTA Technology"
                 fill
                 className="object-contain p-8 bg-gradient-to-br from-tactical-elevated to-tactical-soft"

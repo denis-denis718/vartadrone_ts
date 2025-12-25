@@ -7,6 +7,7 @@ import { useTranslations } from 'next-intl';
 import { motion, useScroll, useTransform } from 'framer-motion';
 import { Button } from '@/components/ui/Button';
 import { TextReveal } from '@/components/animations';
+import { BASE_PATH } from '@/lib/constants';
 
 interface HeroProps {
   locale: string;
@@ -111,7 +112,7 @@ export function Hero({ locale }: HeroProps) {
 
               {/* Main image */}
               <Image
-                src="/images/droneHunterVarta.svg"
+                src={`${BASE_PATH}/images/droneHunterVarta.svg`}
                 alt="VARTA DroneHunter"
                 fill
                 className="object-contain drop-shadow-2xl"

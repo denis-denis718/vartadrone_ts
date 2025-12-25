@@ -6,6 +6,7 @@ import { useTranslations } from 'next-intl';
 import { motion } from 'framer-motion';
 import { Button } from '@/components/ui/Button';
 import { FadeIn } from '@/components/animations';
+import { BASE_PATH } from '@/lib/constants';
 
 interface CTAProps {
   locale: string;
@@ -27,7 +28,7 @@ export function CTA({ locale }: CTAProps) {
           <FadeIn direction="left">
             <div className="relative aspect-[4/3] rounded-lg overflow-hidden border border-camo-olive/30">
               <Image
-                src="/images/droneSecondHunterVarta.svg"
+                src={`${BASE_PATH}/images/droneSecondHunterVarta.svg`}
                 alt="VARTA DroneHunter"
                 fill
                 className="object-contain p-8 bg-gradient-to-br from-tactical-soft to-tactical-muted"
