@@ -1,0 +1,176 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  /* === PRIMARY — MULTICAM CAMO === */
+  --color-camo-dark: #1C1F1A;
+  --color-camo-olive: #4A5240;
+  --color-camo-khaki: #8B7355;
+  --color-camo-sand: #C4B39A;
+  --color-camo-brown: #5C4033;
+
+  /* === TACTICAL BLACKS === */
+  --color-black-pure: #000000;
+  --color-black-rich: #0A0A0A;
+  --color-black-soft: #141414;
+  --color-black-muted: #1A1A1A;
+  --color-black-elevated: #242424;
+
+  /* === ACCENT COLORS === */
+  --color-accent-gold: #C9A227;
+  --color-accent-amber: #D4A84B;
+  --color-accent-red: #8B2635;
+  --color-accent-green: #2D5A3D;
+
+  /* === TEXT === */
+  --color-text-primary: #FAFAFA;
+  --color-text-secondary: #A1A1AA;
+  --color-text-muted: #71717A;
+
+  /* === ANIMATION === */
+  --ease-out-expo: cubic-bezier(0.16, 1, 0.3, 1);
+  --ease-out-quint: cubic-bezier(0.22, 1, 0.36, 1);
+  --ease-in-out: cubic-bezier(0.65, 0, 0.35, 1);
+
+  --duration-fast: 150ms;
+  --duration-normal: 300ms;
+  --duration-slow: 500ms;
+  --duration-slower: 800ms;
+}
+
+@layer base {
+  * {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    background-color: var(--color-black-rich);
+    color: var(--color-text-primary);
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  ::selection {
+    background-color: var(--color-accent-gold);
+    color: var(--color-black-rich);
+  }
+
+  /* Scrollbar styling */
+  ::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+  }
+
+  ::-webkit-scrollbar-track {
+    background: var(--color-black-muted);
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background: var(--color-camo-olive);
+    border-radius: 4px;
+  }
+
+  ::-webkit-scrollbar-thumb:hover {
+    background: var(--color-camo-khaki);
+  }
+}
+
+@layer components {
+  /* Container */
+  .container-tactical {
+    @apply mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl;
+  }
+
+  /* Section padding */
+  .section-padding {
+    @apply py-16 md:py-24 lg:py-32;
+  }
+
+  /* Grid pattern overlay */
+  .grid-overlay {
+    background-image: linear-gradient(rgba(74, 82, 64, 0.05) 1px, transparent 1px),
+                      linear-gradient(90deg, rgba(74, 82, 64, 0.05) 1px, transparent 1px);
+    background-size: 50px 50px;
+  }
+
+  /* Text gradient */
+  .text-gradient-gold {
+    @apply bg-clip-text text-transparent bg-gradient-to-r from-accent-gold to-accent-amber;
+  }
+
+  /* Glow effects */
+  .glow-gold {
+    box-shadow: 0 0 20px rgba(201, 162, 39, 0.3);
+  }
+
+  .glow-gold-hover:hover {
+    box-shadow: 0 0 30px rgba(201, 162, 39, 0.5);
+  }
+
+  /* Border tactical */
+  .border-tactical {
+    @apply border border-camo-olive/30;
+  }
+
+  /* Card base */
+  .card-tactical {
+    @apply bg-tactical-soft border border-camo-olive/20 rounded-lg backdrop-blur-sm;
+  }
+
+  /* Badge base */
+  .badge-tactical {
+    @apply inline-flex items-center px-3 py-1 text-xs font-mono uppercase tracking-wider
+           bg-camo-olive/20 text-camo-sand border border-camo-olive/40 rounded;
+  }
+
+  /* Link hover effect */
+  .link-tactical {
+    @apply relative after:absolute after:bottom-0 after:left-0 after:h-px after:w-0
+           after:bg-accent-gold after:transition-all after:duration-300 hover:after:w-full;
+  }
+}
+
+@layer utilities {
+  /* Hide scrollbar */
+  .no-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+  .no-scrollbar {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+
+  /* Text balance */
+  .text-balance {
+    text-wrap: balance;
+  }
+
+  /* Product image styling */
+  .product-image {
+    filter: drop-shadow(0 0 10px rgba(201, 162, 39, 0.2));
+  }
+
+  .product-image-hover:hover {
+    filter: drop-shadow(0 0 20px rgba(201, 162, 39, 0.4));
+  }
+
+  /* Reduced motion */
+  @media (prefers-reduced-motion: reduce) {
+    *,
+    *::before,
+    *::after {
+      animation-duration: 0.01ms !important;
+      animation-iteration-count: 1 !important;
+      transition-duration: 0.01ms !important;
+    }
+  }
+}

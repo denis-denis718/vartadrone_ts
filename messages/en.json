@@ -1,0 +1,165 @@
+{
+  "common": {
+    "cta": {
+      "request": "Request Info",
+      "learnMore": "Learn More",
+      "contact": "Contact Us",
+      "viewCatalog": "View Catalog",
+      "getQuote": "Get a Quote",
+      "download": "Download"
+    },
+    "badges": {
+      "NATO": "NATO STANDARD",
+      "COMBAT_TESTED": "COMBAT TESTED",
+      "COMPACT": "COMPACT",
+      "HEAVY_DUTY": "HEAVY DUTY",
+      "SPECIALIZED": "SPECIALIZED"
+    }
+  },
+  "nav": {
+    "products": "Products",
+    "solutions": "Solutions",
+    "technology": "Technology",
+    "investors": "Investors",
+    "about": "About",
+    "contact": "Contact",
+    "news": "News"
+  },
+  "hero": {
+    "title": "DroneHunter",
+    "titleAccent": "VARTA",
+    "subtitle": "Advanced Counter-Drone Defense System",
+    "description": "Cutting-edge UAV interception technology. Designed in Ukraine for aerial threat neutralization.",
+    "scrollToExplore": "Scroll to explore"
+  },
+  "products": {
+    "title": "Our Products",
+    "subtitle": "Tactical solutions for effective counter-drone operations",
+    "kozak": {
+      "name": "KOZAK",
+      "tagline": "Tactical Anti-Drone Module",
+      "description": "Stabilized module for precise interception of enemy drones at distances up to 800m"
+    },
+    "sich": {
+      "name": "SICH",
+      "tagline": "Compact Interception System",
+      "description": "Lightweight and mobile device for rapid threat response"
+    },
+    "bulava": {
+      "name": "BULAVA",
+      "tagline": "Heavy Anti-Drone Complex",
+      "description": "Powerful device for neutralizing large and high-speed UAVs"
+    },
+    "spys": {
+      "name": "SPYS",
+      "tagline": "Specialized Cartridges",
+      "description": "High-efficiency SPYS20 and SPYS2K cartridges for anti-drone systems"
+    },
+    "specs": {
+      "range": "Range",
+      "weight": "Weight",
+      "ammo": "Ammo Capacity",
+      "reloadTime": "Reload Time",
+      "caliber": "Caliber",
+      "unit": {
+        "meters": "m",
+        "kg": "kg",
+        "rounds": "rds",
+        "seconds": "sec"
+      }
+    }
+  },
+  "solutions": {
+    "title": "Complete Solutions",
+    "subtitle": "LuckyStrike — Full kits for combat mission success",
+    "basic": {
+      "name": "LuckyStrike Basic",
+      "description": "Entry-level kit for getting started"
+    },
+    "pro": {
+      "name": "LuckyStrike Pro",
+      "description": "Professional set for experienced operators"
+    },
+    "tactical": {
+      "name": "LuckyStrike Tactical",
+      "description": "Complete tactical complex for special operations"
+    },
+    "includes": "Kit includes"
+  },
+  "features": {
+    "title": "Why VARTA",
+    "subtitle": "Our system advantages",
+    "precision": {
+      "title": "Precision",
+      "description": "Stabilization system ensures accuracy even while moving"
+    },
+    "reliability": {
+      "title": "Reliability",
+      "description": "Combat-proven in real conflict conditions"
+    },
+    "mobility": {
+      "title": "Mobility",
+      "description": "Rapid deployment and easy FPV integration"
+    },
+    "nato": {
+      "title": "NATO Standard",
+      "description": "Compliant with international military standards"
+    }
+  },
+  "technology": {
+    "title": "Technology",
+    "subtitle": "Ukrainian Defense Innovation",
+    "description": "Developing and improving counter-drone systems based on real combat experience"
+  },
+  "investors": {
+    "title": "Investors",
+    "subtitle": "Join the defense technology evolution",
+    "description": "VARTA offers an opportunity to invest in cutting-edge military technology with proven effectiveness"
+  },
+  "about": {
+    "title": "About VARTA",
+    "subtitle": "Ukrainian team of engineers and military experts",
+    "description": "Creating counter-drone systems to defend Ukraine and its allies",
+    "mission": {
+      "title": "Our Mission",
+      "description": "800m effective interception range. NATO certified."
+    }
+  },
+  "contact": {
+    "title": "Contact",
+    "subtitle": "Get in touch",
+    "form": {
+      "name": "Name",
+      "email": "Email",
+      "phone": "Phone",
+      "company": "Organization",
+      "message": "Message",
+      "type": {
+        "label": "Request Type",
+        "inquiry": "General Inquiry",
+        "partnership": "Partnership",
+        "investor": "Investment",
+        "other": "Other"
+      },
+      "submit": "Send",
+      "success": "Message sent successfully!",
+      "error": "Error. Please try again."
+    }
+  },
+  "news": {
+    "title": "News",
+    "subtitle": "Latest Updates",
+    "readMore": "Read more"
+  },
+  "footer": {
+    "description": "Ukrainian counter-drone defense system",
+    "links": {
+      "products": "Products",
+      "company": "Company",
+      "legal": "Legal"
+    },
+    "privacy": "Privacy Policy",
+    "terms": "Terms of Use",
+    "copyright": "All rights reserved"
+  }
+}
